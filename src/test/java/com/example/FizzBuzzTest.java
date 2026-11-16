@@ -14,7 +14,8 @@ public class FizzBuzzTest {
             "1, 1",
             "2, 2",
             "3, Fizz",
-            "5, Buzz"
+            "5, Buzz",
+            "15, FizzBuzz"
     })
     public void testConvert(int number, String expected) {
         assertEquals(expected, fizzBuzz.convert(number));
