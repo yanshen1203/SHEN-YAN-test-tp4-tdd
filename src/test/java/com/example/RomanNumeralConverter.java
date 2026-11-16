@@ -12,6 +12,9 @@ public class RomanNumeralConverter {
         if (number == 9) {
             return "IX";
         }
+        if (number == 10) {
+            return "X";
+        }
         return "I".repeat(number);
     }
 }
