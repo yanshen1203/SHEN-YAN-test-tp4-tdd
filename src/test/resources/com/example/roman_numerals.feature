@@ -1,0 +1,10 @@
+Feature: Roman numerals conversion
+
+  Scenario Outline: Convert an integer to a Roman numeral
+    Given the number <number>
+    When I convert it to a Roman numeral
+    Then the result should be "<roman>"
+
+    Examples:
+      | number | roman |
+      | 1      | I     |
