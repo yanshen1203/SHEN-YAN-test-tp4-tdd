@@ -8,3 +8,4 @@ Feature: Roman numerals conversion
     Examples:
       | number | roman |
       | 1      | I     |
+      | 2      | II    |
