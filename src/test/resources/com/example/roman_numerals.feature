@@ -12,3 +12,4 @@ Feature: Roman numerals conversion
       | 3 | III |
       | 4 | IV |
       | 5 | V |
+      | 9 | IX |
