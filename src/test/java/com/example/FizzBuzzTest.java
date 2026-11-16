@@ -12,7 +12,8 @@ public class FizzBuzzTest {
     @ParameterizedTest
     @CsvSource({
             "1, 1",
-            "2, 2"
+            "2, 2",
+            "3, Fizz"
     })
     public void testConvert(int number, String expected) {
         assertEquals(expected, fizzBuzz.convert(number));
