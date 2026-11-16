@@ -12,4 +12,8 @@ public class FizzBuzzTest {
     public void test1Returns1() {
         assertEquals("1", fizzBuzz.convert(1));
     }
+    @Test
+    public void test2Returns2() {
+        assertEquals("2", fizzBuzz.convert(2));
+    }
 }
