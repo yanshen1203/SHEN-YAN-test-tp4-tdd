@@ -1,6 +1,7 @@
 package com.example;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -8,12 +9,12 @@ public class FizzBuzzTest {
 
     private final FizzBuzz fizzBuzz = new FizzBuzz();
 
-    @Test
-    public void test1Returns1() {
-        assertEquals("1", fizzBuzz.convert(1));
-    }
-    @Test
-    public void test2Returns2() {
-        assertEquals("2", fizzBuzz.convert(2));
+    @ParameterizedTest
+    @CsvSource({
+            "1, 1",
+            "2, 2"
+    })
+    public void testConvert(int number, String expected) {
+        assertEquals(expected, fizzBuzz.convert(number));
     }
 }
