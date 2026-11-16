@@ -13,7 +13,8 @@ public class FizzBuzzTest {
     @CsvSource({
             "1, 1",
             "2, 2",
-            "3, Fizz"
+            "3, Fizz",
+            "5, Buzz"
     })
     public void testConvert(int number, String expected) {
         assertEquals(expected, fizzBuzz.convert(number));
