@@ -1,6 +1,5 @@
 package com.example;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -12,8 +11,8 @@ public class PrimeCheckerTest {
     private final PrimeChecker primeChecker = new PrimeChecker();
 
     @ParameterizedTest
-    @ValueSource(ints = {0, 1})
-    public void testNumbersLessThan2AreNotPrime(int number) {
+    @ValueSource(ints = {0, 1, 4})
+    public void testNonPrimeNumbers(int number) {
         assertFalse(primeChecker.isPrime(number), number + " should not be considered a prime number");
     }
 
@@ -21,9 +20,5 @@ public class PrimeCheckerTest {
     @ValueSource(ints = {2, 3})
     public void testPrimeNumbers(int number) {
         assertTrue(primeChecker.isPrime(number), number + " should be considered a prime number");
-    }
-    @Test
-    public void test4IsNotPrime() {
-        assertFalse(primeChecker.isPrime(4), "4 should not be considered a prime number");
     }
 }
