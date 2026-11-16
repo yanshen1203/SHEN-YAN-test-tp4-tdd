@@ -23,4 +23,5 @@ public class PrimeCheckerTest {
     public void test2IsPrime() {
         assertTrue(primeChecker.isPrime(2), "2 should be considered a prime number");
     }
+
 }
